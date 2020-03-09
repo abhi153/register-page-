@@ -1,0 +1,206 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    font-size: 15px;
+    color: black;
+    background-size: cover;
+}
+
+.wrapper
+{
+    background-color: #E1E1E1;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+header
+{
+	height: 64px;
+	color:#fff;
+	text-align: center;
+	background: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+header h2{
+	font-size: 1.8em;
+	margin-top: 0;
+	padding-top: .8em;
+}
+
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 0;
+}
+
+form{
+	border-top: 2px solid rgba(45,57,69);
+	margin-top: 2px;
+	padding-top: 1em;
+}
+
+fieldset{
+	border: none;
+	padding: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top:1em; 
+	padding-bottom:1em;
+}
+
+fieldset legend{
+	font-size: 1.65em;
+	font-weight: bold;
+	padding-bottom: .75em;
+}
+
+.contact-info label{
+	display: block;
+	padding-bottom: .65em;
+  font-size: 1.25em;
+}
+
+.hobbies label{
+    font-size: 1.25em;
+}
+
+.contact-info input , select , textarea{
+	box-shadow: 0 0 1px ;
+	width: 100%;
+	height: 4em;
+	background-color: #fff;
+	outline: none;
+	border:none;
+	border-radius: 5px;
+	border-color: #fff;
+	text-indent: 10px;
+	transition: border-color .4s ease-in-out;
+}
+
+textarea{
+	height: 85px;
+	padding-top:10px;
+}
+
+.contact-info input:focus , select:focus , textarea:focus{
+	border: 2px solid #46698B;
+	border-radius: 0;
+}
+
+#name:focus,
+#email:focus{
+	border: 2px solid #FF7463;
+}
+
+[type="submit"]{
+	width: 100%;
+/* 	background-color: #4EBBB5; */
+/*   background-color: #f8f8e7; */
+  background-color: #eeeec6;
+	height: 60px;
+	border: none;
+	border-radius: 5px;
+	color: #444444;
+  font-size: 1.25em;
+}
+
+[type="submit"]:hover{
+    opacity: .8;
+  }
+
+.hobbies [type="checkbox"]{
+	transform: scale(1.4);
+}  
+
+::placeholder{
+	text-align: center;
+	padding-right: 1em;
+}
+
+.footer p{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+	margin: 0;
+}
+
+/* adding media query */
+@media(min-width: 750px){
+
+	.wrapper{
+		max-width: 685px;
+	}
+	
+	.contact-info label{
+		display: inline-block;
+		width: 20%;
+	}
+
+	.contact-info input , select{
+		width: 78%;
+	}
+
+	.newsletter .checkboxes p{
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+}
+
+/* adding media query for larger screen */
+@media(min-width:1020px){
+
+	.wrapper{
+		width: 90%;
+		max-width: 950px;
+	}
+
+	.contact-info label{
+		display: inline-block;
+		width: 26%;
+	}
+
+	.contact-info input , select{
+		width: 72%;
+	}
+
+	.contact-info p , .hobbies p{
+		margin-top: .5em;
+		margin-bottom: .5em;
+	}
+
+	form{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.container{
+		display: flex; 
+		flex-direction: column; 
+		min-width: 340px;
+		height: 500px;
+		justify-content: space-around;
+	}
+
+	fieldset{
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.contact-info{
+		width: 55%;
+	}
+
+	.hobbies{
+		width: 41%;
+	}
+
+	form{
+		padding-top: 1em;
+	}
+}

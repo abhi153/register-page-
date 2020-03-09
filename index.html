@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form register</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <h2 class="tag-line">Register Form</h2>
+    </header>
+
+    <div class="wrapper">
+        <main>
+            <form action="#" method="GET">
+                <fieldset class="contact-info">
+                    <div class="container">
+                        <legend>Contact Details</legend>
+
+                        <!-- Name -->
+                        <p>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="user_name" placeholder="Enter your name" title="Please fill out this field">
+                        </p>
+
+                        <!-- Email  -->
+                        <p>
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="user_email" placeholder="Enter your email id" title="Please fill out this field">
+                        </p>
+                        <!-- Address -->
+                        <p>
+                            <label for="address">Street Adress</label>
+                            <input type="text" id="address" name="user_address" placeholder="Enter your address here">
+                        </p>
+                        <!-- city -->
+                        <p>
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="user_city" placeholder="Enter the city name ">
+                        </p>
+
+                        <!-- state -->
+                        <p>
+                            <label for="state">State</label>
+                            <select id="state" name="user_state">
+                                <option value="state">Choose State</option>
+                                <option value="karnataka">Karnataka</option>
+                                <option value="tamilNadu">Tamil Nadu</option>
+                                <option value="kerala">Kerala</option>
+                            </select>
+                        </p>
+                        <!-- Pincode -->
+                        <p>
+                            <label for="pincode">Pincode</label>
+                            <input type="number" id="pincode" name="user_pincode" placeholder="Enter the pincode number">
+                        </p>
+                    </div>
+                </fieldset>
+
+                <!-- Side Field -->
+                <fieldset class="hobbies">
+                    <div class="container">
+                        <legend>Hobbies</legend>
+                        <p>Select one of the hobby </p>
+
+                        <div class="checkboxes">
+                            <p>
+                                <input type="checkbox" id="reading_book" name="reading">
+                                <label for="reading_book">Reading Books</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="play_game" name="play">
+                                <label for="play_game">Playing Games</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="walk_out" name="walking">
+                                <label for="walk_out">Long Walks</label>
+                            </p>
+                        </div>
+
+                        <p>Gender</p>
+                        <div class="radio-btn">
+                            <p>
+                                <input type="radio" id="male" value="male" name="male">
+                                <label for="male">Male</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="female" value="female" name="female">
+                                <label for="female">Female</label>
+                            </p>
+                        </div>
+
+                        <p>How did you know about us?</p>
+                        <p>
+                            <select>
+                                <option value="PickOne">Pick One</option>
+                                <option value="Family">Family/Friends</option>--
+                                <option value="Facebook">Facebook Ad</option>
+                                <option value="Banner">Banner</option>
+                                <option value="Newspaper">Newspaper</option>
+                            </select>
+                        </p>
+
+                        <p>Any additional details or questions please enter here</p>
+                        <p>
+                            <textarea id="questions" name="user_question"></textarea>
+                            <br/>
+                        </p>
+                    </div>
+                </fieldset>
+            </form>
+
+            <!-- Footer -->
+            <div class="footer">
+                <button type="submit">Sign Up</button>
+                <p>&copy; Copyright Register Form 2020</p>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
